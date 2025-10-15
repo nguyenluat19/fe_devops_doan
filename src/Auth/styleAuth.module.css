@@ -1,0 +1,172 @@
+
+/* Tổng thể */
+.Login {
+    max-width: 400px;
+    /* margin: 80px auto; */
+    margin: 200px auto;
+    padding: 40px;
+    background: #ffffff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    text-align: center;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Hiệu ứng fade-in */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Input Fields */
+.Login input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    transition: border 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.Login input:focus {
+    border: 2px solid #007bff;
+    box-shadow: 0px 0px 10px rgba(0, 123, 255, 0.2);
+}
+
+/* Button */
+.Login button {
+    width: 100%;
+    padding: 12px;
+    /* background: linear-gradient(135deg, #007bff, #0056b3); */
+    background-color: #2e5986;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out, transform 0.2s;
+}
+
+.Login button:hover {
+    background: linear-gradient(135deg, #0056b3, #004494);
+    transform: scale(1.02);
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+    .Login {
+        width: 90%;
+        padding: 30px;
+    }
+
+    .Login input {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .Login button {
+        font-size: 16px;
+        padding: 10px;
+    }
+}
+
+
+
+
+/* Register Form Styling */
+.Register {
+    max-width: 450px;
+    margin: 130px auto;
+    padding: 28px;
+    background: #ffffff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    text-align: center;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Input Fields */
+.Register input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    transition: border 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.Register input:focus {
+    border: 2px solid #007bff;
+    box-shadow: 0px 0px 10px rgba(0, 123, 255, 0.2);
+}
+
+/* Labels */
+.Register label {
+    font-weight: bold;
+    display: block;
+    text-align: left;
+    margin-bottom: 3px;
+    font-size: 14px;
+    color: #333;
+}
+
+/* Button */
+.Register button {
+    width: 100%;
+    padding: 10px;
+    background-color: #2e5986;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out, transform 0.2s;
+}
+
+.Register button:hover {
+    background: linear-gradient(135deg, #0056b3, #004494);
+    transform: scale(1.02);
+}
+
+/* Form Footer */
+.Register .form-footer {
+    margin-top: 0px;
+    font-size: 14px;
+}
+
+.Register .form-footer a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.Register .form-footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+    .Register {
+        width: 90%;
+        padding: 30px;
+    }
+
+    .Register input {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .Register button {
+        font-size: 16px;
+        padding: 10px;
+    }
+}

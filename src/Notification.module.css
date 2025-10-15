@@ -1,0 +1,269 @@
+.notificationOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    animation: fadeIn 0.4s ease;
+}
+
+.notificationContainer {
+    width: 90%;
+    max-width: 520px;
+    background-color: white;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    position: relative;
+    animation: bounceIn 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    border: 2px solid #2e5986;
+}
+
+.notificationHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    /* background: linear-gradient(135deg, #3a6fa0 0%, #2e5986 100%); */
+    background-color: #2e5986;
+    color: white;
+}
+
+.titleWithIcon {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.celebrationIcon {
+    animation: spin 3s linear infinite;
+}
+
+.notificationHeader h3 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.closeButton {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    transition: transform 0.2s ease;
+    border-radius: 50%;
+}
+
+.closeButton:hover {
+    transform: rotate(90deg);
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.notificationContent {
+    padding: 20px;
+    color: #4B4B4B;
+    background-color: #f8faff;
+}
+
+.welcomeMessage {
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: #2e5986;
+    font-weight: 700;
+}
+
+.notificationContent p {
+    margin-top: 0;
+    margin-bottom: 12px;
+}
+
+.promotionList {
+    margin-bottom: 0;
+    padding-left: 5px;
+    list-style-type: none;
+}
+
+.promotionList li {
+    margin-bottom: 12px;
+    padding: 10px 15px;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    display: flex;
+    align-items: center;
+    transition: transform 0.2s ease;
+}
+
+.promotionList li:hover {
+    transform: translateX(5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.promotionList .icon {
+    color: #2e5986;
+    margin-right: 12px;
+    font-size: 16px;
+}
+
+.notificationFooter {
+    padding: 15px 20px;
+    border-top: 1px solid #eee;
+    text-align: right;
+    background-color: white;
+}
+
+.acceptButton {
+    background: linear-gradient(135deg, #3a6fa0 0%, #2e5986 100%);
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    font-size: 15px;
+    box-shadow: 0 4px 10px rgba(46, 89, 134, 0.3);
+}
+
+.acceptButton:hover {
+    background: linear-gradient(135deg, #2e5986 0%, #1d3b57 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(46, 89, 134, 0.4);
+}
+
+.acceptButton:active {
+    transform: translateY(1px);
+}
+
+/* Hiệu ứng bong bóng trang trí */
+.bubbles {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    pointer-events: none;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.bubble {
+    position: absolute;
+    bottom: -20px;
+    background-color: rgba(46, 89, 134, 0.1);
+    border-radius: 50%;
+    opacity: 0.5;
+    animation: floatBubble 5s ease-in infinite;
+}
+
+.bubble:nth-child(1) {
+    width: 40px;
+    height: 40px;
+    left: 10%;
+    animation-duration: 6s;
+}
+
+.bubble:nth-child(2) {
+    width: 30px;
+    height: 30px;
+    left: 30%;
+    animation-duration: 8s;
+    animation-delay: 1s;
+}
+
+.bubble:nth-child(3) {
+    width: 45px;
+    height: 45px;
+    left: 50%;
+    animation-duration: 7s;
+    animation-delay: 2s;
+}
+
+.bubble:nth-child(4) {
+    width: 25px;
+    height: 25px;
+    left: 70%;
+    animation-duration: 9s;
+    animation-delay: 0.5s;
+}
+
+.bubble:nth-child(5) {
+    width: 35px;
+    height: 35px;
+    left: 85%;
+    animation-duration: 5s;
+    animation-delay: 1.5s;
+}
+
+/* Animation hiệu ứng */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes bounceIn {
+    0% { 
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    70% {
+        opacity: 1;
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes floatBubble {
+    0% {
+        transform: translateY(0);
+        opacity: 0.5;
+    }
+    100% {
+        transform: translateY(-500px);
+        opacity: 0;
+    }
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Hiệu ứng thoát */
+.fadeOut {
+    animation: fadeOut 0.3s forwards;
+}
+
+.slideOut {
+    animation: slideOut 0.3s forwards;
+}
+
+@keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+
+@keyframes slideOut {
+    from { 
+        transform: translateY(0);
+        opacity: 1;
+    }
+    to { 
+        transform: translateY(20px);
+        opacity: 0;
+    }
+}

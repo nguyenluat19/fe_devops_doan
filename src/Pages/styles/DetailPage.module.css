@@ -1,0 +1,550 @@
+body{
+    background: #F4F4F4;
+}
+.containerDetailPage{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    
+}
+.wrapDetailPage{
+    margin-top: 140px;
+    gap: 10px;
+}
+.wrapInDetailPage{
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+}
+.thumbnailContainer{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 15px;
+    
+}
+.thumbnail {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: white;
+    transition: transform 0.2s ease-in-out, border 0.2s ease-in-out;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+
+}
+.thumbnail:hover {
+    transform: scale(1.1);
+    border: 2px solid #2e5986;
+}
+.leftDetail{
+    width: 53%;
+    /* background: #007bff; */
+}
+.mainImage{
+    width: 100%;
+    box-shadow: 0 4px 10px rgba(129, 129, 129, 0.1);
+    border: 1px solid rgb(230, 225, 225);
+    border-radius: 10px;
+}
+.mainImage img{
+    max-width: 100%;
+    width: 400px;
+    /* height: 350px; */
+    /* margin: auto; */
+    margin-left: 2.8cm;
+}
+.rightDetail{
+    width: 47%;
+    position: sticky;
+    top: 86px; /* Giữ cố định khi cuộn */
+    max-height: 90vh; /* Giới hạn chiều cao để không bị tràn */
+    overflow-y: auto; /* Cho phép cuộn nếu nội dung quá dài */
+    /* background: white; */
+    /* padding: 15px; */
+    border-radius: 10px;
+    padding-bottom: 15px;
+    /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); */
+}
+.giaDetail{
+    display: flex;
+    justify-content: space-between;
+}
+.giaSKU{
+    display: flex;
+    gap: 10px;
+}
+.sku{
+    font-size: 13px;
+}
+.pgiaGoc{
+    text-decoration: line-through;
+    font-size: 13px;
+    font-weight: 400;
+    margin-top: 4px;
+}
+/* .choiceColor{
+    display: flex;
+    width: 100%;
+    max-width: 200px;
+    border: 1px solid #2e5986;
+    border-radius: 10px;
+} */
+.choiceColor img{
+    /* width: 100%; */
+    /* margin: auto; */
+    width: 50px;
+    height: 50px;
+}
+/* .undefinedMau{
+
+    line-height: 6px;
+    margin-top: 9px;
+} */
+
+.choiceColor {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 200px;
+    border: 1px solid #2e5986;
+    border-radius: 10px;
+    padding: 8px;
+    position: relative; /* Để đặt dấu check */
+}
+
+.undefinedMau {
+    flex-grow: 1;
+    margin-left: 8px;
+    line-height: 1.5;
+}
+
+.undefinedMau p {
+    margin: 2px 0;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.undefinedMau div {
+    position: absolute;
+    right: 8px;
+    bottom: 8px;
+    background-color: #2e5986;
+    color: white;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 12px;
+}
+
+.uuDaiMemBerWrap{
+    width: 100%;
+    border: 1px solid #2e5986;
+    margin-top: 10px;
+    border-radius: 5px;
+    background: linear-gradient(#ccdff4, #FFFFFF);
+}
+.uuDaiMemberIn{
+    display: flex;
+    padding: 5px 10px;
+}
+.memberLeft{
+flex: 1;
+}
+.memberRight{
+    flex: 1;
+}
+.leftDanhRiengA{
+    color: #6d6b6b;
+    font-size: 13px;
+}
+.leftDanhRiengB{
+    font-size: 20px;
+    font-weight: bold;
+    color: #2e5986;
+}
+.truHaiMuoiPTA{
+    color: #757575;
+    font-size: 13px;
+    text-decoration: line-through;
+}
+.truHaiMuoiPTB{
+    font-weight: bold;
+    font-size: 17px;
+    color: #FD475A;
+}
+.memberRight div{
+    color: #757575;
+    font-size: 13px;
+}
+.memberRight span{
+    font-size: 20px;
+    font-weight: bold;
+    color: #2e5986;
+}
+.memberRight p{
+    color: #757575;
+    font-size: 13px;
+}
+.diemThuong p{
+    margin-top: 10px;
+    background: #FFF7D8;
+    color: #FBB31E;
+    font-weight: bold;
+    font-size: 13px;
+    width: 180px;
+    border-radius: 30px;
+    padding: 4px;
+    border: 1px solid #FCD34D;
+}
+.allButtonAdd{
+    width: 100%;
+    margin-top: 10px;
+}
+.twoButtonFist{
+    display: flex;
+    gap: 10px;
+    
+}
+.twoButtonFistA{
+    border-radius: 10px;
+    border: none;
+    width: 75%;
+    color: white;
+    background-color: #FD475A;
+    padding: 5px;
+}
+.twoButtonFistA div{
+    font-size: 13px;
+}
+.WrapChoiceColor{
+    cursor: pointer;
+}
+.twoButtonFistB div{
+    font-size: 13px;
+}
+.twoButtonFistB strong{
+    font-size: 20px;
+}
+.twoButtonFistB{
+    width: 25%;
+    padding-bottom: 5px;
+    border-radius: 10px;
+    border: 1px solid #FD475A;
+    color: #FD475A;
+}
+.twoButtonSecond{
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+.twoButtonSecondA{
+    flex: 1;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    background: #2e5986;
+}
+.twoButtonSecondA div{
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+.twoButtonSecondB div{
+    font-size: 13px;
+    margin-bottom: 5px;
+
+}
+.twoButtonSecondB{
+    flex: 1;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    background: #2e5986;
+}
+.uuDaiTranChinh{
+    width: 100%;
+    /* padding: 10px; */
+    background: white;
+    margin-top: 15px;
+    border-radius: 10px;
+}
+.uuDaiTranChinh h3{
+    padding: 8px 10px;
+    font-size: 16px;
+    font-weight: 700;
+    background: #FFDADE;
+    color: #FD475A;
+    border-radius:10px 10px 0 0 ;
+}
+.iconUuDaiTranChinh{
+    font-size: 20px;
+}
+.wrapInUuDaiTranChinh{
+    font-size: 13px;
+    padding: 5px 10px;
+    margin-bottom: 5px;
+    line-height: 2;
+}
+.wrapInUuDaiTranChinh strong{
+    color: #2e5986;
+}
+.iconUuDaiTranChinha{
+    font-size: 25px;
+    color: #FD475A;
+}
+.leftDetailWrapBox{
+    background: white;
+    margin-top: 15px;
+    border-radius: 10px;
+    border: 1px solid rgb(230, 225, 225);
+    padding: 10px 15px;
+    font-size: 13px;
+    line-height: 2.4;
+    /* gap: 10px; */
+}
+.leftDetailWrapBoxIcon{
+    font-size: 20px;
+    color: #2e5986;
+}
+.informationProductLeftDetail{
+    width: 100%;
+    background: white;
+    margin-top: 12px;
+    border-radius: 10px;
+    font-family: -apple-system, BlinkMacSystemFont, "Inter", sans-serif;
+    font-size: 15px;
+}
+.informationProductLeftDetailOne{
+    font-weight: bold;
+}
+.informationProductLeftDetailOne{
+    border-radius:10px 10px 0 0;
+    padding: 10px 20px;
+    color: #333333;
+    background-color: #EBEBEB;
+}
+.informationProductLeftDetailOneIcon{
+    font-size: 25px;
+    color: #333333;
+}
+.informationProductLeftDetailIn{
+    padding: 10px;
+    
+}
+.informationProductLeftDetailInIn{
+    background-color: #EBEBEB;
+    border-radius: 10px;
+    padding: 10px;
+}
+.informationProductLeftDetailInIn h6{
+    font-weight: bold;
+    color: #333333;
+}
+
+
+
+.settingProductLeftDetail{
+    width: 100%;
+    background: white;
+    margin-top: 15px;
+    border-radius: 10px;
+    font-family: -apple-system, BlinkMacSystemFont, "Inter", sans-serif;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+.settingProductLeftDetailOne{
+    font-weight: bold;
+}
+.settingProductLeftDetailOne{
+    border-radius:10px 10px 0 0;
+    padding: 10px 20px;
+    color: #333333;
+    background-color: #EBEBEB;
+}
+.settingProductLeftDetailOneIcon{
+    font-size: 25px;
+    color: #333333;
+}
+.settingProductLeftDetailIn{
+    padding: 10px;
+    
+}
+.settingProductLeftDetailInIn{
+    background-color: #EBEBEB;
+    border-radius: 10px;
+    padding: 10px;
+}
+.settingProductLeftDetailInIn h6{
+    font-weight: bold;
+    color: #333333;
+}
+.settingDetailA{
+    padding: 6px 10px;
+}
+.settingDetailB{
+    background-color: white;
+    padding: 10px 10px;
+    border-radius: 5px;
+}
+.sanPhamMoi{
+    width: 100%;
+    max-width: 1200px;
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+   
+}
+.wrapProductCartSpMoi{
+    display: flex;
+    width: 100%;
+    gap: 10px;
+    margin-top: 10px;
+}
+.productCartSpMoi{
+    border: 1px solid rgb(236, 233, 233);
+    background: #fff;
+    border-radius: 5px;
+    padding: 12.8px;
+    text-align: center;
+}
+.imageProductCartSpMoi{
+    cursor: pointer;
+  /* width: 100%; */
+  width: 100%;
+  /* width: 225.9px; */
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+.flexGiaHome{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.giaHomeFlex{
+    color:#FD475A;
+    font-weight: bold;
+    font-size: 15px;
+  }
+  .giaGocHomeFlex{
+    font-size: 12px;
+    margin-top: -5px;
+    color: grey;
+    text-decoration: line-through;
+  }
+  .modalWrap{
+    position: fixed;
+    width: 100%;
+    max-width: 1200px;
+    background-color: rgba(68, 64, 64, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .modal {
+    /* width: 100%;
+    max-width: 500px;
+    height: 100%;
+    max-height: 500px;
+    background-color: rgba(68, 64, 64, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center; */
+  }
+  
+  .modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .modal-content button {
+    margin-top: 10px;
+    padding: 8px 15px;
+    background-color: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+ 
+
+
+  .freeShip{
+    width: 100%;
+    /* background: #2e5986; */
+    background: linear-gradient(#ccdff4, #FFFFFF);
+    color: #2e5986;
+    border: 1px solid #2e5986;
+    text-align: center;
+    margin-top: 15px;
+    border-radius: 5px;
+    padding: 5px;
+  }
+  .wrapGuide{
+   padding: 5px 10px;
+   background-color: white;
+   border-radius: 5px;
+   border: 1px solid #ccc;
+  }
+  .wrapInfoUser{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    gap: 15px;
+  }
+  .wrapInfoUser input {
+    width: 100%;
+    padding: 5px 10px;
+    /* border-radius: 5px; */
+    border: 1px solid #ccc;
+    margin-top: 5px;
+  }
+  .textArea{
+    border: 1px solid #ccc;
+    margin-top: 15px;
+    color: #757575;
+    padding-left: 10px;
+  }
+  .inputAdress{
+    width: 100%;
+    padding: 5px 10px;
+    /* border-radius: 5px; */
+    border: 1px solid #ccc;
+    margin-top: 15px;
+  }
+  .wrapBtn{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    gap: 15px;
+  }
+  .btnQuayLai{
+    border-radius: 10px;
+    border: none;
+    width: 30%;
+    color: white;
+    background-color: #2e5986;
+    padding: 5px;
+  }
+  .btnDatHang{
+    border-radius: 10px;
+    border: none;
+    width: 30%;
+    color: white;
+    background-color: #FD475A;
+    padding: 5px;
+  }
+  .wrapNote{
+    text-align: center;
+  }

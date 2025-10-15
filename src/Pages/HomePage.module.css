@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+    
+}
+
+.HomePage {
+  display: flex;
+  flex-direction: row; /* Hiển thị theo hàng ngang */
+  margin: 0 auto;
+  align-items: flex-start;
+  justify-content: center;
+  max-width: 1200px;
+  width: 100%;
+  min-height: 100vh;
+  /* background-color: #F4F4F4; */
+  gap: 10px;
+  /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); */
+}
+
+/* CSS cho DanhMucLeft */
+.DanhMucLeft {
+  width: 230px; /* Độ rộng của sidebar */
+  position: sticky;
+  margin-top: 10px;
+  top: 85px; /* Giữ cố định khi cuộn */
+  height: fit-content;
+  background: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  align-self: flex-start; /* Cố định ở phía trên */
+  margin-bottom: 20px;
+}
+
+/* CSS cho phần danh sách sản phẩm */
+.sanPhamRight {
+  flex-grow: 1;
+  width: 960px;
+  background-color: white;
+  margin-top: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+}
+.sanPhamRightIn{
+  padding: 10px;
+}
+
+/* Định dạng danh sách sản phẩm */
+.productList {
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: center; */
+  gap: 10px;
+}
+
+.product-card {
+  background: #fff;
+  border-radius: 8px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 250px;
+}
+
+.product-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Swiper Slider */
+.swiper-slide {
+  background-size: cover;
+  background-position: center;
+}
+
+.mySwiper2 {
+  height: 80%;
+  width: 100%;
+}
+
+.mySwiper {
+  height: 20%;
+  box-sizing: border-box;
+  padding: 10px 0;
+}
+
+.mySwiper .swiper-slide {
+  width: 25%;
+  height: 100%;
+  opacity: 0.4;
+}
+
+.mySwiper .swiper-slide-thumb-active {
+  opacity: 1;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* CSS cho phần lọc giá */
+.wrapDanhMucLeft {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.FilterTitle {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.FilterTitle svg {
+  margin-right: 8px;
+  color: #ff5722;
+  font-size: 22px;
+}
+
+/* Radio Group */
+.RadioGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+/* Mỗi mục radio */
+.RadioItem {
+  background: #f9f9f9;
+  padding: 10px 15px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.RadioItem:hover {
+  background: #f6f5f5;
+  transition: background 0.3s, transform 0.2s; 
+  transform: translateX(5px);
+
+}
+
+.RadioItem .ant-radio-wrapper {
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+}
+
+/* Reload Button */
+.ReloadButton {
+  margin-top: 10px;
+  background: #2e5986;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.ReloadButton:hover {
+  background: #333454;
+}
+
+
+
+.flashSale{
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  border-radius: 10px;
+  /* cursor: pointer; */
+}
+
+/* Tùy chỉnh nút next/prev nhỏ hơn */
+.swiper-button-next,
+.swiper-button-prev {
+  color: #ff5722; /* Màu nút */
+  font-size: 20px !important; /* Giảm kích thước */
+  width: 30px !important; /* Điều chỉnh chiều rộng */
+  height: 30px !important; /* Điều chỉnh chiều cao */
+}
+
+/* Làm nền tròn nhỏ gọn */
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 16px !important; /* Giảm kích thước icon */
+  background: rgba(0, 0, 0, 0.1); /* Nền mờ nhẹ */
+  padding: 5px;
+  border-radius: 50%; /* Làm tròn nút */
+}
+
+
+.wrapProductHome{
+  display: block;
+  width: 100%;
+}
+.videoProductHome{
+  /* margin-top: 5px; */
+  width: 100%;
+  display: flex;
+  gap: 11px;
+}
+.videoQC{
+  width: 100%;
+  border-radius: 5px;
+}
+.productList{
+  /* margin-top: 10px; */
+  width: 100%;
+  display: flex;
+  gap: 10px;
+
+  /* justify-content: center; */
+}
+.productCart{
+  
+  /* cursor: pointer; */
+  border: 1px solid rgb(236, 233, 233);
+background: #fff;
+border-radius: 5px;
+padding: 12.8px;
+text-align: center;
+}
+.productImageHome{
+  cursor: pointer;
+  /* width: 100%; */
+  width: 100%;
+  /* width: 225.9px; */
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+.flexGiaHome{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.giaHomeFlex{
+  color:#FD475A;
+  font-weight: bold;
+  font-size: 15px;
+}
+.giaGocHomeFlex{
+  font-size: 12px;
+  margin-top: -5px;
+  color: grey;
+  text-decoration: line-through;
+}
+.discountHomeProduct{
+  font-size: 12px;
+  position: absolute;
+  padding: 2px 8px;
+
+  border-radius: 5px;
+}
+.redBorder {
+  color: red;
+  background-color: rgb(240, 222, 222);
+  border: 1px solid red;
+}
+
+.greenBorder {
+  color: #2e5986;
+  background-color: white;
+  border: 1px solid #2e5986;
+}
+.flexKhuyenMai{
+  display: flex;
+  font-size: 12px;
+  color: rgb(75, 75, 75); 
+  gap: 10px;
+  /* justify-content: space-around;  */
+}
+.flexKhuyenMai .inKM{
+  border-radius: 5px;
+  background-color: #FFDFD4;
+  padding: 2px 5px;
+  font-weight: bold;
+color:#FC521D;
+}
+
+#button-body::before {
+ padding-top: 10px;
+}

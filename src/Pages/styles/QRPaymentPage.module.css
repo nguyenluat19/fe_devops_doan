@@ -1,0 +1,232 @@
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    min-height: 80vh;
+}
+
+.paymentWrapper {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    text-align: center;
+    margin-top: 120px;
+}
+
+.paymentWrapper h2 {
+    color: #2e5986;
+    margin-bottom: 30px;
+    font-size: 28px;
+}
+
+.loading {
+    padding: 40px;
+    color: #666;
+}
+
+.qrSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.qrCode {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border: 2px solid #e0e0e0;
+}
+
+.qrCode img {
+    max-width: 300px;
+    height: auto;
+    display: block;
+}
+
+.paymentInfo {
+    background: #f8f9fa;
+    padding: 25px;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 500px;
+    text-align: left;
+}
+
+.paymentInfo h3 {
+    color: #2e5986;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 22px;
+}
+
+.bankInfo {
+    margin-bottom: 20px;
+}
+
+.bankInfo p {
+    margin: 8px 0;
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.bankInfo p:last-child {
+    border-bottom: none;
+}
+
+.bankInfo strong {
+    color: #333;
+    min-width: 120px;
+}
+
+.timer {
+    text-align: center;
+    margin: 20px 0;
+    padding: 15px;
+    background: #fff3cd;
+    border-radius: 8px;
+    border: 1px solid #ffeaa7;
+}
+
+.countdown {
+    font-weight: bold;
+    font-size: 18px;
+    color: #d63031;
+}
+
+.status {
+    text-align: center;
+    margin: 20px 0;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.statusText {
+    font-weight: bold;
+    margin-left: 10px;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+.statusText.pending {
+    background: #fff3cd;
+    color: #856404;
+}
+
+.statusText.Completed {
+    background: #d4edda;
+    color: #155724;
+}
+
+.statusText.Failed {
+    background: #f8d7da;
+    color: #721c24;
+}
+
+.instructions {
+    background: #e3f2fd;
+    padding: 25px;
+    border-radius: 12px;
+    text-align: left;
+    max-width: 500px;
+    width: 100%;
+}
+
+.instructions h4 {
+    color: #1976d2;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.instructions ol {
+    margin: 0;
+    padding-left: 20px;
+}
+
+.instructions li {
+    margin: 10px 0;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.actions {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.backBtn, .refreshBtn {
+    padding: 12px 30px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    min-width: 150px;
+}
+
+.backBtn {
+    background: #6c757d;
+    color: white;
+}
+
+.backBtn:hover {
+    background: #5a6268;
+    transform: translateY(-2px);
+}
+
+.refreshBtn {
+    background: #2e5986;
+    color: white;
+}
+
+.refreshBtn:hover {
+    background: #1e3a5f;
+    transform: translateY(-2px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+    
+    .paymentWrapper {
+        padding: 20px;
+    }
+    
+    .qrCode img {
+        max-width: 250px;
+    }
+    
+    .paymentInfo {
+        padding: 20px;
+    }
+    
+    .bankInfo p {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
+    
+    .actions {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .backBtn, .refreshBtn {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+

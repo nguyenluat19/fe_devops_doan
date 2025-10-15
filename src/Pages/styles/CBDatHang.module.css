@@ -1,0 +1,146 @@
+.containerCBDatHang {
+    width: 100%;
+    max-width: 700px;
+    margin: auto;
+}
+
+.inContainerCBDatHang {
+    margin-top: 140px;
+}
+
+.InINWrapGioHang {
+    padding: 10px;
+}
+
+.productItemLeft {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid grey;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+}
+
+.productImageLeft {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.productImageInLeft img {
+    width: 90px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.tenSanPahm {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+}
+
+.tenSanPahm .a {
+    font-size: 17px;
+    font-weight: 550;
+    color: #474747;
+}
+
+.tenSanPahm div {
+    font-size: 15px;
+}
+
+ .tongTienSauKM {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    font-weight: 600;
+}
+.tongTienTamTinh{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    /* font-weight: 600; */
+}
+.tongTienTamTinh strong, .tongTienSauKM strong {
+    color: #474747;
+}
+
+.tongTienSauKM div {
+    color: #FD475A;
+}
+
+.bottomInINWrapGioHang {
+    margin-top: 20px;
+}
+
+/* Thông tin giao hàng */
+.shippingInfo {
+    margin-top: 20px;
+    /* padding: 15px; */
+    border-radius: 5px;
+    /* background: #f9f9f9; */
+}
+
+.shippingMethod {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.shippingMethod button {
+    width: 100%;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    /* background: #ddd; */
+    cursor: pointer;
+    transition: 0.3s;
+    /* outline: #474747; */
+    border: 1px solid #ccc;
+}
+
+.shippingMethod button.active {
+    background: hsl(0, 0%, 100%);
+    color: #2e5986;
+    font-weight: bold;
+}
+
+.storePickup, .homeDelivery {
+    margin-top: 10px;
+}
+
+.storePickup label, .homeDelivery label {
+    display: block;
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.storePickup select, .homeDelivery select,
+.storePickup input, .homeDelivery input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: rgb(85, 85, 85);
+    font-size: 15px;
+}
+
+.storePickup input, .homeDelivery input {
+    /* padding: 10px; */
+}
+.inChossePayment button{
+    width: 100%;
+    padding: 5px 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    /* background: #ddd; */
+    cursor: pointer;
+    transition: 0.3s;
+    /* outline: #474747; */
+    /* border: 1px solid #2e5986; */
+    color: white;
+    background-color: #2e5986;
+}

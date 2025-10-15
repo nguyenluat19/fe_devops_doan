@@ -1,0 +1,217 @@
+/* ===== RESET CƠ BẢN ===== */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #f8f9fa;
+    overflow-x: hidden;
+}
+
+/* ===== THANH TOP ===== */
+.slider-top {
+    background-color: #e9efff;
+    color: #333;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1001;
+    transition: top 0.3s ease;
+}
+
+.slider-top-in {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 1200px;
+    gap: 10px;
+}
+
+.anh-headerTop-a {
+    width: 250px;
+    cursor: pointer;
+}
+
+/* ===== HEADER CHÍNH ===== */
+.header-website {
+    background: #fff;
+    padding: 15px 30px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 50px;
+    /* Để dưới slider-top */
+    z-index: 1000;
+    transition: top 0.3s ease;
+}
+
+.header-fixed {
+    top: 0;
+    /* Khi scroll header dính lên trên */
+}
+
+.container-website {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.logo-website .logo-text {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+    text-decoration: none;
+}
+
+/* ===== TÌM KIẾM ===== */
+.search-bar-website {
+    display: flex;
+    align-items: center;
+    flex: 0.5;
+    margin: 0 20px;
+}
+
+.search-bar-website input {
+    width: 100%;
+    padding: 7px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.search-bar-website button {
+    background: #2e5986;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    margin-left: 5px;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ===== ACTIONS ===== */
+.actions-website {
+    display: flex;
+    align-items: center;
+}
+
+.icon-website {
+    font-size: 24px;
+    margin-right: 20px;
+    cursor: pointer;
+    color: #333;
+}
+
+.buttonHeader {
+    text-decoration: none;
+    color: #fff;
+    background: #2e5986;
+    padding: 8px 14px;
+    border-radius: 4px;
+    margin-left: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.buttonHeader:hover {
+    background: #1f3f5f;
+}
+
+.badge-adjust {
+    margin-right: 25px;
+}
+
+/* ===== MENU TOGGLE (ẨN TRÊN PC) ===== */
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+}
+
+.menu-toggle .menu-icon {
+    width: 25px;
+    height: 3px;
+    background: #333;
+    margin: 5px 0;
+}
+
+/* ================= MEDIA QUERY ================= */
+
+/* Tablet */
+@media (max-width: 992px) {
+    .slider-top-in {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .anh-headerTop-a {
+        width: 180px;
+    }
+
+    .search-bar-website {
+        flex: 0.8;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .slider-top-in {
+        display: none;
+        /* Ẩn banner nhỏ */
+    }
+
+    .header-website {
+        padding: 12px 20px;
+    }
+
+    .container-website {
+        flex-wrap: wrap;
+    }
+
+    /* Thanh tìm kiếm full width */
+    .search-bar-website {
+        flex: 1 1 100%;
+        margin: 10px 0;
+        order: 3;
+    }
+
+    /* Menu toggle hiển thị */
+    .menu-toggle {
+        display: block;
+    }
+
+    /* Ẩn actions ban đầu, mở bằng toggle */
+    .actions-website {
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        background: #fff;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        padding: 10px 20px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .actions-website.open {
+        display: flex;
+    }
+
+    .buttonHeader {
+        margin: 10px 0 0;
+        width: 100%;
+        text-align: center;
+    }
+}

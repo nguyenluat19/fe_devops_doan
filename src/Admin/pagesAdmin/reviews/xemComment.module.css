@@ -1,0 +1,49 @@
+.allComment{
+   
+}
+.review{
+    padding: 2px 10px;
+    border: 1px solid rgb(221, 221, 221);
+    margin-top: 10px;
+}
+.formReplyBl {
+    width: 100%;
+}
+.formReplyBl textarea{
+    padding-left: 5px;
+    width: 100%;
+    border: 1px solid rgb(221, 221, 221);
+}
+.formReplyBl textarea:focus{
+ 
+    outline: none;
+    border-color: #3498db;
+    box-shadow: 0 0 6px rgba(247, 247, 247, 0.5);
+}
+
+.buttonGuiBl{
+    border: 1px solid rgb(220, 218, 218);
+    border-radius: 5px;
+    background-color: #2e5986;
+    color: white;
+    padding: 5px 15px;
+    justify-content: right;
+    
+}
+.buttonXoaBl{
+    border: 1px solid rgb(220, 218, 218);
+    border-radius: 5px;
+    background-color: #f73c3c;
+    color: white;
+    padding: 5px 10px;
+    justify-content: right;
+    margin-right: 10px;
+}
+.wrapButtonGuiBl{
+    width: 100%;
+    /* justify-content: end; */
+    display: flex;
+    justify-content: end;
+    margin-top: 2px;
+    margin-bottom: 5px;
+}

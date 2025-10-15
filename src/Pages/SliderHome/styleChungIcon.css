@@ -1,0 +1,17 @@
+/* Tùy chỉnh nút next/prev nhỏ hơn */
+.swiper-button-next,
+.swiper-button-prev {
+  color: #ff5722; /* Màu nút */
+  font-size: 20px !important; /* Giảm kích thước */
+  width: 30px !important; /* Điều chỉnh chiều rộng */
+  height: 30px !important; 
+}
+
+/* Làm nền tròn nhỏ gọn */
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 16px !important; /* Giảm kích thước icon */
+  background: rgba(0, 0, 0, 0.1); /* Nền mờ nhẹ */
+  padding: 5px;
+  border-radius: 50%; /* Làm tròn nút */
+}

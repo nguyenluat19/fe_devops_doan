@@ -1,0 +1,190 @@
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.inner {
+    margin-top: 100px;
+    padding-bottom: 60px;
+}
+
+.breadcrumb {
+    font-size: 14px;
+    color: #444;
+    margin-bottom: 18px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.loading {
+    padding: 40px;
+    text-align: center;
+    color: #666;
+}
+
+.empty {
+    padding: 40px;
+    text-align: center;
+    color: #666;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+/* card */
+.card {
+    display: flex;
+    gap: 18px;
+    background: #fff;
+    border-radius: 10px;
+    padding: 14px;
+    align-items: center;
+    border: 1px solid #eee;
+}
+
+/* left thumb */
+.left {
+    width: 92px;
+    flex-shrink: 0;
+}
+
+.thumb {
+    width: 92px;
+    height: 92px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 1px solid #efefef;
+    padding: 6px;
+    background: #fff;
+}
+
+/* center info */
+.center {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.title {
+    margin: 0;
+    font-size: 18px;
+    color: #222;
+}
+
+.small {
+    font-size: 13px;
+    color: #888;
+    margin-left: 8px;
+}
+
+.row {
+    display: flex;
+    gap: 12px;
+    align-items: baseline;
+    color: #444;
+    font-size: 14px;
+}
+
+.value {
+    color: #333;
+    font-weight: 600;
+}
+
+.products {
+    margin-top: 6px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.productLine {
+    display: flex;
+    justify-content: space-between;
+    color: #555;
+    font-size: 13px;
+}
+
+.prodName {
+    font-weight: 500;
+}
+
+.prodMeta {
+    color: #777;
+}
+
+/* right area */
+.right {
+    width: 220px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-end;
+}
+
+.label {
+    display: block;
+    font-size: 13px;
+    color: #666;
+    margin-bottom: 6px;
+}
+
+.select {
+    width: 100%;
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+}
+
+.saveBtn {
+    margin-top: 6px;
+    width: 100%;
+    background: #2e5986;
+    color: white;
+    border: none;
+    padding: 8px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.saveBtn:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+}
+
+.meta {
+    margin-top: 8px;
+    font-size: 12px;
+    color: #999;
+    text-align: right;
+}
+
+/* responsive */
+@media (max-width: 900px) {
+    .card {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .right {
+        width: 100%;
+        align-items: stretch;
+    }
+
+    .left {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .thumb {
+        width: 160px;
+        height: 100px;
+    }
+}

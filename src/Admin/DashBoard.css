@@ -1,0 +1,43 @@
+
+.ant-layout{
+    min-height: 100vh;
+}
+.ant-layout-header span.trigger svg{
+    width: 25px !important;
+    height: 25px !important;
+
+}
+.ant-layout-sider-children{
+    
+}
+.QLbanhang{
+    padding: 10px;
+    color: white;
+}
+.ant-layout-sider {
+    width: 100%;
+}
+.demo-logo-vertical {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100px; /* Hoặc điều chỉnh theo chiều cao của Sider */
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    line-height: 1.6; /* Tăng khoảng cách giữa các dòng */
+    letter-spacing: 2px; /* Thêm khoảng cách giữa các chữ cái */
+    background-color: #001529; /* Giữ nền tối nếu cần */
+    margin-bottom: 10px; /* Khoảng cách dưới logo */
+}
+
+.in-logo{
+    height: 70px;
+  padding-top: 22px;
+  cursor: pointer;
+}
+.Link{
+    text-decoration: none;
+}
